@@ -1,0 +1,24 @@
+{
+  "name": "kod.rf",
+  "description": "Coding project",
+  "version": "1.0.0",
+  "author": "xzol <x@zol.su>",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "dev": "webpack-dev-server --hot --open",
+    "start": "webpack --watch --mode=production"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "webpack": "^4.28.2",
+    "materialize-css": "^1.0.0",
+    "path": "^0.12.7",
+    "vue": "^2.5.21",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "css-loader": "^1.0.0",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
