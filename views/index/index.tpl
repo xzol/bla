@@ -9,11 +9,11 @@
     <meta name="description" content="Программирование и создание сайтов, курсы, лекции, книги.">
 </head>
 <body>
-    <div class="container-fluid app" id="app">
+    <div class="app" id="app">
 
     </div>
 
-    <script type="text/javascript" src="static/js/build.js"></script>
+    <script type="text/javascript" src="/static/js/index/build.js"></script>
 
 </body>
 </html>

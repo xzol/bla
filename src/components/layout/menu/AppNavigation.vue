@@ -1,12 +1,12 @@
 <template>
     <div class="app-navigation">
         <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Logo</a>
+            <div class="nav-wrapper deep-purple lighten-3">
+                <a href="/" class="brand-logo app-navigation_app-navigation">к0д.рф</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">JavaScript</a></li>
+                    <li><a href="/litra/">Литература</a></li>
+                    <li><a href="">Книги</a></li>
+                    <li><a href="">Видео</a></li>
                 </ul>
             </div>
         </nav>
@@ -20,5 +20,7 @@
 </script>
 
 <style scoped>
-
+    .app-navigation_app-navigation{
+        padding: 5px;
+    }
 </style>

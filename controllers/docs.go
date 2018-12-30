@@ -4,17 +4,17 @@ import (
 	"github.com/astaxie/beego"
 )
 
-type MainController struct {
+type DocsController struct {
 	beego.Controller
 }
+//
+//func (c *DocsController) Get() {
+//	c.Data["Website"] = "beego.me"
+//	c.Data["Email"] = "astaxie@gmail.com"
+//	c.TplName = "index.tpl"
+//}
 
-func (c *MainController) Get() {
-	c.Data["Website"] = "beego.me"
-	c.Data["Email"] = "astaxie@gmail.com"
-	c.TplName = "index/index.tpl"
-}
-
-func (main *MainController) HelloSitepoint() {
+func (main *DocsController) HelloSitepoint() {
 	main.Data["Website"] = "My Website"
 	main.Data["Email"] = "your.email.address@example.com"
 	main.Data["EmailName"] = "Your Name"

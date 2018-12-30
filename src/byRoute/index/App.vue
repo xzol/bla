@@ -1,7 +1,11 @@
 <template>
-    <div class="app">
-        <h2>{{message}}</h2>
+    <div class="app container">
         <app-navigation></app-navigation>
+        <div class="row">
+            <div class="col s12">
+                asd
+            </div>
+        </div>
     </div>
 </template>
 
