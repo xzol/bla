@@ -13,7 +13,7 @@ import (
 
 func init() {
     beego.Router("/", &controllers.MainController{})
-	beego.Router("/hello-world/:id([0-9]+)", &controllers.MainController{}, "get,post:HelloSitepoint")
+	//beego.Router("/hello-world/:id([0-9]+)", &controllers.MainController{}, "get,post:HelloSitepoint")
 	beego.Router("/litra", &controllers.LitraController{})
 	//beego.Router("/litra/:id([0-9]+)", &controllers.LitraController{}, "get:Ls")
 
