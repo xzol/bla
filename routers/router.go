@@ -15,6 +15,6 @@ func init() {
     beego.Router("/", &controllers.MainController{})
 	//beego.Router("/hello-world/:id([0-9]+)", &controllers.MainController{}, "get,post:HelloSitepoint")
 	beego.Router("/litra", &controllers.LitraController{})
+	beego.Router("/litra/ls", &controllers.LitraController{},"get:Ls")
 	//beego.Router("/litra/:id([0-9]+)", &controllers.LitraController{}, "get:Ls")
-
 }

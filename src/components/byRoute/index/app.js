@@ -7,9 +7,6 @@ import 'materialize-css/dist/js/materialize.js';
 import AppNavigation from "../../layout/menu/AppNavigation.vue"
 Vue.component('app-navigation', AppNavigation);
 
-import breadcrumbs from "../../layout/breadcrumbs/breadcrumbs.vue"
-Vue.component('app-breadcrumbs', breadcrumbs);
-
 import body from "./body.vue"
 Vue.component('app-body', body);
 

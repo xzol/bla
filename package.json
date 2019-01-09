@@ -1,5 +1,5 @@
 {
-  "name": "код.рф",
+  "name": "k0d.rf",
   "description": "Coding project",
   "version": "1.0.0",
   "author": "xzol <x@zol.su>",
@@ -12,7 +12,6 @@
     "webpack-cli": "^3.2.1"
   },
   "dependencies": {
-    "axios": "^0.18.0",
     "css-loader": "^1.0.0",
     "materialize-css": "^1.0.0",
     "path": "^0.12.7",
