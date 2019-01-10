@@ -1,5 +1,5 @@
 <template>
-    <div class="body">
+    <div class="central-field">
         <div class="col s12">
 
         </div>
@@ -8,12 +8,12 @@
 
 <script>
     export default {
-        name: "body"
+        name: "centralField"
     }
 </script>
 
 <style scoped>
-    .body{
+    .central-field{
         margin-top: -38px;
     }
 </style>

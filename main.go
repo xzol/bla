@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "bla.su/routers"
+	_ "kod.rf/routers"
 	"github.com/astaxie/beego"
 )
 

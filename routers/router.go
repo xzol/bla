@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"bla.su/controllers"
+	"kod.rf/controllers"
 	"github.com/astaxie/beego"
 )
 //

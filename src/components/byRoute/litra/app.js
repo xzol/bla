@@ -10,8 +10,8 @@ Vue.component('app-navigation', AppNavigation);
 import breadcrumbs from "../../layout/breadcrumbs/breadcrumbs.vue"
 Vue.component('app-breadcrumbs', breadcrumbs);
 
-import body from "./body.vue"
-Vue.component('app-body', body);
+import centralField from "./centralField.vue"
+Vue.component('app-centralField', centralField);
 
 new Vue({
     el: '#app',

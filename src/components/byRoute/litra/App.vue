@@ -8,7 +8,7 @@
         </div>
         <div class="row">
             <div class="col s12">
-                <app-body></app-body>
+                <app-centralField></app-centralField>
             </div>
         </div>
     </div>

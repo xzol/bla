@@ -7,8 +7,8 @@ import 'materialize-css/dist/js/materialize.js';
 import AppNavigation from "../../layout/menu/AppNavigation.vue"
 Vue.component('app-navigation', AppNavigation);
 
-import body from "./body.vue"
-Vue.component('app-body', body);
+import centralField from "./centralField.vue"
+Vue.component('app-centralField', centralField);
 
 new Vue({
     el: '#app',
