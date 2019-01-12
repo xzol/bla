@@ -3,6 +3,8 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"encoding/json"
+	"io/ioutil"
+	"log"
 )
 
 type LitraController struct {
@@ -21,22 +23,43 @@ func (litra *LitraController) Get() {
 }
 
 func (litra *LitraController) Ls() {
+	//init
 	litra.getNeedData()
 	litra.TplName = "ajax/litra/ls.tpl"
-	// ********************* Marshal *********************
-	u := map[string]interface{}{}
-	u["name"] = "kish"
-	u["age"] = 28
-	u["work"] = "engine"
-	//u["hobbies"] = []string{"art", "football"}
-	u["hobbies"] = "art"
 
-	b, err := json.Marshal(u)
+	//data
+	listFiles, err := ioutil.ReadDir("/home/x/K0d/go_projects/src/kod.rf/data/files")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	files := make(map[string][]string, 2)
+
+	for _, file := range listFiles {
+		if file.IsDir(){
+			if files["d"] == nil{
+				files["d"] = make([]string, 1)
+			}
+			if file.Name() == ""{
+				files["d"] = append(files["d"], ".")
+			}else {
+				files["d"] = append(files["d"], file.Name())
+			}
+		}else{
+			if files["-"] == nil {
+				files["-"] = make([]string, 1)
+			}
+			files["-"] = append(files["-"], file.Name())
+		}
+	}
+
+	// ********************* Marshal *********************
+	b, err := json.Marshal(files)
 	if err != nil {
 		panic(err)
 	}
 
-	//fmt.Println()
+	litra.Ctx.ResponseWriter.Header().Set("Content-Type", "application/json")
+	litra.Ctx.ResponseWriter.Write(b)
 
-	litra.Data["data"] = string(b)
 }
